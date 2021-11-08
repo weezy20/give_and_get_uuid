@@ -1,0 +1,21 @@
+[package]
+edition = "2021"
+name = "uuid-generator"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies.hyper]
+features = ["tcp", "http1", "http2", "server"]
+version = "0.14.14"
+
+[dependencies.tokio]
+features = ["full"]
+version = "1.13.0"
+
+[dependencies.uuid]
+features = ["v4"]
+version = "0.8.2"
+
+[dependencies]
+rand = "0.8.4"

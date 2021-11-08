@@ -1,0 +1,18 @@
+[package]
+edition = "2021"
+name = "give_and_get_uuid"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+members = [
+  "uuid-generator",
+  "client",
+]
+
+[dependencies]
+client = {path = "./client"}
+dotenv = "0.15.0"
+tokio = { version = "1.13.0", features = ["full"] }
+uuid-generator = {path = "./uuid-generator/"}
